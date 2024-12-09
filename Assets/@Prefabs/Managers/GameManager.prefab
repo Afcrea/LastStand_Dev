@@ -1,0 +1,188 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3842968359482473779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8890620641314879395}
+  - component: {fileID: 8406182160063399073}
+  - component: {fileID: 790290332215472640}
+  - component: {fileID: 9081298728523991154}
+  - component: {fileID: 1730339757181302676}
+  - component: {fileID: 1177766204903917690}
+  - component: {fileID: 6141660533476701358}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8890620641314879395
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3842968359482473779}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 66.22648, y: 3.925198, z: -91.1044}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8406182160063399073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3842968359482473779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b7bac2df5405184bab9eda81a3f1784, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySpawn: {fileID: 0}
+  playerMaxHP: 100
+  playerMaxEXP: 10
+  gameMaxLevel: 100
+  playerHP: 0
+  playerEXP: 0
+  playerLevel: 0
+  isDead: 0
+  playerHitSounds:
+  - {fileID: 8300000, guid: f03aa2962361d5e44a1324e824916ca7, type: 3}
+  - {fileID: 8300000, guid: 493e807f9ed531145b0a78b01f63b6f4, type: 3}
+  - {fileID: 8300000, guid: 2b286f0cec800e24e8b43ea8d3bf750c, type: 3}
+  - {fileID: 8300000, guid: dc01f51750c67c04ca1bee96f98003df, type: 3}
+  - {fileID: 8300000, guid: f8c7a0efe9cf7d74a939f118a439faf3, type: 3}
+  - {fileID: 8300000, guid: 2e6b692a2d747324cbdc7f94d21b9c50, type: 3}
+  - {fileID: 8300000, guid: 1ad5d17e897ef254bbc96cde4e4ceb58, type: 3}
+  - {fileID: 8300000, guid: d608b297c6d881b4ca88f2095d1772dc, type: 3}
+  - {fileID: 8300000, guid: 530ac0a086577ac4eb3d97e754d07626, type: 3}
+  - {fileID: 8300000, guid: 5e01ab8586c6efa42b1e5e3bd6ed47a7, type: 3}
+  breakTime: 0
+  gameWave: 0
+  gameLevel: 0
+  score: 0
+  baseValue: 0
+  count: 0
+  isAllZombieDead: 0
+  startWave: 0
+  isGameClear: 0
+  breakStartTime: 0
+  passTime: 0
+  zombieCount: 0
+  zombieBossCount: 0
+  BGM:
+  - {fileID: 8300000, guid: 0669e639ef5c6e149ab515231fa0ec73, type: 3}
+  - {fileID: 8300000, guid: 04085f663c115e0408624c5184111e35, type: 3}
+  - {fileID: 8300000, guid: 961e4628cc24e5141a1e71c3f998cc99, type: 3}
+  BGMObject: {fileID: 0}
+  pistolUpgradeDamage: 0
+  shotgunUpgradeDamage: 78
+  rifleUpgradeDamage: 0
+  machinegunUpgradeDamage: 0
+  turretUpgradeDamage: 0
+  swordUpgradeDamage: 0
+  bowUpgradeDamage: 0
+  shotgunTotal: 0
+  rifleTotal: 0
+  machinegunTotal: 0
+  isUpgrading: 0
+  isGunUnlock: 00000000000000
+  zombieSpawnTime: 0
+  bloodScreen: {fileID: 0}
+  gameOverUI: {fileID: 0}
+  scoreText: {fileID: 0}
+  playerStateUI: {fileID: 0}
+  cameraVR: {fileID: 0}
+  upgradeUI: {fileID: 0}
+  cardSlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  healCardPrefab: {fileID: 3961626400963644497, guid: c3955c0921220874eafd07969f1fcae5, type: 3}
+  upgradeCardPrefabs:
+  - {fileID: 776872371467996626, guid: 8db16aff8656b0f42a69124706f85a7a, type: 3}
+  - {fileID: 1892635155038936978, guid: 0971a8bed840be045835b9450ca550c7, type: 3}
+  - {fileID: 3497703694504599288, guid: 019ed296562b51d48953cab410ed67f1, type: 3}
+  - {fileID: 4828403386440580525, guid: fd52e7b903c83e243b9c51925ebdc619, type: 3}
+  - {fileID: 3497703694504599288, guid: dc86a22294495d549acd27779c7776c2, type: 3}
+  - {fileID: 3497703694504599288, guid: 8d229a49a63d86e44b9d38d081549bbf, type: 3}
+  - {fileID: 6597892302238356789, guid: fb9d29c11f2871a44a993e21e6129385, type: 3}
+  layerMask: 0
+--- !u!114 &790290332215472640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3842968359482473779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5d75241af975f14aac4fbf9eb32f570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpSlider: {fileID: 0}
+  expSlider: {fileID: 0}
+  scoreText: {fileID: 0}
+--- !u!114 &9081298728523991154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3842968359482473779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f9496f7a264524db1dcad4f3bbc76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isUpdate: 0
+--- !u!114 &1730339757181302676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3842968359482473779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f9496f7a264524db1dcad4f3bbc76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isUpdate: 0
+--- !u!114 &1177766204903917690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3842968359482473779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f9496f7a264524db1dcad4f3bbc76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isUpdate: 0
+--- !u!114 &6141660533476701358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3842968359482473779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f9496f7a264524db1dcad4f3bbc76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isUpdate: 0
